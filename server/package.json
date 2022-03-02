@@ -1,0 +1,22 @@
+{
+  "name": "button",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Archer-01/button.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Archer-01/button/issues"
+  },
+  "homepage": "https://github.com/Archer-01/button#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
