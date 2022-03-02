@@ -1,0 +1,25 @@
+body {
+	background-color: grey;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 40%;
+}
+
+button {
+	width: 200px;
+	height: 70px;
+	font-size: 1.5rem;
+	outline: none;
+	font-family: 'IBM Plex Serif', serif;
+	font-weight: bold;
+	border-radius: 25px;
+	border: 0;
+}
+
+button:hover {
+	background-color: deepskyblue;
+	color: white;
+}
