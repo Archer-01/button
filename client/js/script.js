@@ -1,4 +1,5 @@
 const	button = document.querySelector("button");
+const	numDiv = document.querySelector("#num");
 let		counter;
 
 async function	loadNumber() {
@@ -7,9 +8,9 @@ async function	loadNumber() {
 
 	response = await fetch("/num");
 	data = await response.text();
-	button.textContent = data;
+	numDiv.textContent = data;
 	counter = parseInt(
-		button.textContent
+		numDiv.textContent
 	);
 }
 
@@ -33,7 +34,7 @@ button.onclick = function(event) {
 		return;
 	}
 	--counter;
-	button.textContent = counter;
+	numDiv.textContent = counter;
 	Cookies.set("userClicked", "true");
 	sendNumber(counter);
 }

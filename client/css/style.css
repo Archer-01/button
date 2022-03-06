@@ -3,23 +3,33 @@ body {
 	margin: 0;
 	padding: 0;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	margin-top: 500px;
 }
 
 button {
-	width: 200px;
-	height: 70px;
-	font-size: 1.5rem;
+	width: 500px;
+	height: 200px;
+	font-size: 6rem;
 	outline: none;
 	font-family: 'IBM Plex Serif', serif;
 	font-weight: bold;
-	border-radius: 25px;
-	border: 0;
+	border-radius: 70px;
+	border: 5px solid red;
 }
 
 button:hover {
 	background-color: deepskyblue;
 	color: white;
+}
+
+#num {
+	display: inline-block;
+	margin-top: 100px;
+	font-size: 8rem;
+	font-weight: bold;
+	color: white;
+	text-shadow: 5px 5px blue;
 }
