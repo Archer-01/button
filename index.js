@@ -11,14 +11,14 @@ const	PORT = process.env.PORT || 8080;
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
-app.use("/client", express.static(path.join(__dirname, "../client")));
+app.use("/client", express.static("./client"));
 app.use(cookieParser());
 
 app.get("/", function(req, res) {
 	if (req.cookies["userClicked"] === undefined) {
 		res.cookie("userClicked", false);
 	}
-	res.sendFile('index.html', { root: "../client" });
+	res.sendFile('index.html', { root: "./client" });
 })
 
 app.get("/num", function(req, res) {
