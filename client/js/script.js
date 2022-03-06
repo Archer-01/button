@@ -33,6 +33,8 @@ button.onclick = function(event) {
 	if (Cookies.get("userClicked") === "true") {
 		return;
 	}
+	if (counter === 0)
+		return ;
 	--counter;
 	numDiv.textContent = counter;
 	Cookies.set("userClicked", "true");
